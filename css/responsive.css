@@ -1,0 +1,23 @@
+@media(max-width:900px){
+
+    .experience .timeline::before{
+
+        left:22px;
+
+    }
+
+    .experience .timeline-item{
+
+        grid-template-columns:40px 1fr;
+
+        gap:20px;
+
+    }
+
+    .experience .timeline-year{
+
+        display:none;
+
+    }
+
+}
