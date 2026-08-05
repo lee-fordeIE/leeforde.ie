@@ -44,25 +44,19 @@ header{
 
     position:fixed;
 
-    top:0;
+    top:20px;
 
-    width:100%;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:min(1200px,92%);
 
     z-index:1000;
-
-    background:rgba(13,17,23,.75);
-
-    backdrop-filter:blur(12px);
 
 }
 
 .navbar{
-
-    width:min(1200px,90%);
-
-    margin:auto;
-
-    height:80px;
 
     display:flex;
 
@@ -70,19 +64,33 @@ header{
 
     align-items:center;
 
-}
+    padding:18px 30px;
 
+    border-radius:18px;
+
+    background:rgba(22,27,34,.75);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 8px 30px rgba(0,0,0,.25);
+
+}
 .logo{
 
     text-decoration:none;
+    color:white;
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:-0.5px;
+    transition:.3s;
+
+}
+
+.logo:hover{
 
     color:#00C2A8;
-
-    font-size:30px;
-
-    font-weight:800;
-
-    letter-spacing:2px;
 
 }
 
@@ -251,5 +259,39 @@ h1{
     background:#00C2A8;
 
     color:#0D1117;
+
+}
+
+.scroll-indicator{
+
+    margin-top:70px;
+
+    font-size:28px;
+
+    color:#00C2A8;
+
+    animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+    0%,20%,50%,80%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    40%{
+
+        transform:translateY(8px);
+
+    }
+
+    60%{
+
+        transform:translateY(4px);
+
+    }
 
 }
