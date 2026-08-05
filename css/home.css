@@ -1,0 +1,350 @@
+/* =====================================================
+   HOMEPAGE
+===================================================== */
+
+/* ==========================
+   Hero
+========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:url("../images/hero.png") center/cover no-repeat;
+
+    position:relative;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(13,17,23,.35),
+        rgba(13,17,23,.55)
+    );
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+}
+
+.hero h1{
+
+    font-size:clamp(4rem,8vw,6rem);
+
+    font-weight:800;
+
+    line-height:1;
+
+    margin:20px 0;
+
+    letter-spacing:-3px;
+
+}
+
+.hero-lines{
+
+    margin:30px 0;
+
+}
+
+.hero-lines p{
+
+    font-size:clamp(1.8rem,3vw,2.6rem);
+
+    font-weight:700;
+
+    line-height:1.3;
+
+}
+
+.hero-description{
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    color:var(--muted);
+
+    font-size:1.25rem;
+
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.scroll-indicator{
+
+    margin-top:70px;
+
+    color:var(--accent);
+
+    font-size:2rem;
+
+}
+
+/* ==========================
+   Identity
+========================== */
+
+.identity{
+
+    margin-top:-80px;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.identity-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.identity-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:40px;
+
+    transition:var(--transition);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.identity-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(0,194,168,.08),
+        transparent
+    );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.identity-card:hover::before{
+
+    opacity:1;
+
+}
+
+.identity-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--accent);
+
+}
+
+.identity-card h2{
+
+    font-size:3rem;
+
+    margin-bottom:18px;
+
+}
+
+.identity-card p{
+
+    color:var(--muted);
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+   About
+========================== */
+
+.about{
+
+    padding-top:180px;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:100px;
+
+    align-items:start;
+
+}
+
+.about-left h2{
+
+    font-size:clamp(2.8rem,5vw,4rem);
+
+    line-height:1.15;
+
+}
+
+.about-right{
+
+    max-width:650px;
+
+}
+
+.about-right p{
+
+    color:var(--muted);
+
+    line-height:1.9;
+
+    font-size:1.1rem;
+
+    margin-bottom:30px;
+
+}
+
+.text-link{
+
+    color:var(--accent);
+
+    font-weight:700;
+
+}
+
+.text-link:hover{
+
+    text-decoration:underline;
+
+}
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact{
+
+    text-align:center;
+
+    padding-top:180px;
+
+}
+
+.contact h2{
+
+    font-size:56px;
+
+    margin:20px 0;
+
+}
+
+.contact-text{
+
+    max-width:700px;
+
+    margin:0 auto 50px;
+
+    color:var(--muted);
+
+    font-size:20px;
+
+    line-height:1.9;
+
+}
+
+.contact-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer-content{
+
+    text-align:center;
+
+}
+
+.footer-content h3{
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-content p{
+
+    color:var(--muted);
+
+    line-height:1.9;
+
+}
+
+.copyright{
+
+    margin-top:50px;
+
+    font-size:15px;
+
+}
